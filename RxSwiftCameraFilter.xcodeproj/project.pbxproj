@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2B7400C528B1A6E67AAB63 /* Pods_RxSwiftCameraFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DA41BDF5046A7E80F22577 /* Pods_RxSwiftCameraFilter.framework */; };
+		CE020F1926B43E3D0000E424 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE020F1826B43E3D0000E424 /* PhotoCollectionViewCell.swift */; };
 		CE94958C26AEE31600F56408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94958B26AEE31600F56408 /* AppDelegate.swift */; };
 		CE94958E26AEE31600F56408 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94958D26AEE31600F56408 /* SceneDelegate.swift */; };
 		CE94959026AEE31600F56408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94958F26AEE31600F56408 /* ViewController.swift */; };
 		CE94959326AEE31600F56408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE94959126AEE31600F56408 /* Main.storyboard */; };
 		CE94959526AEE32100F56408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94959426AEE32100F56408 /* Assets.xcassets */; };
 		CE94959826AEE32100F56408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE94959626AEE32100F56408 /* LaunchScreen.storyboard */; };
+		CE9495A126AEE48F00F56408 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9495A026AEE48F00F56408 /* PhotoCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0424069BC136052E6AE8E75F /* Pods-RxSwiftCameraFilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCameraFilter.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftCameraFilter/Pods-RxSwiftCameraFilter.debug.xcconfig"; sourceTree = "<group>"; };
+		720A20E85CDF63E2E4029024 /* Pods-RxSwiftCameraFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCameraFilter.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftCameraFilter/Pods-RxSwiftCameraFilter.release.xcconfig"; sourceTree = "<group>"; };
+		A9DA41BDF5046A7E80F22577 /* Pods_RxSwiftCameraFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftCameraFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE020F1826B43E3D0000E424 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE94958826AEE31600F56408 /* RxSwiftCameraFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftCameraFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94958B26AEE31600F56408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE94958D26AEE31600F56408 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		CE94959426AEE32100F56408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE94959726AEE32100F56408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE94959926AEE32100F56408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9495A026AEE48F00F56408 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2B7400C528B1A6E67AAB63 /* Pods_RxSwiftCameraFilter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E9652343A7EEE75175CE42C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9DA41BDF5046A7E80F22577 /* Pods_RxSwiftCameraFilter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5945DFD885733B63863AC86E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0424069BC136052E6AE8E75F /* Pods-RxSwiftCameraFilter.debug.xcconfig */,
+				720A20E85CDF63E2E4029024 /* Pods-RxSwiftCameraFilter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE94957F26AEE31600F56408 = {
 			isa = PBXGroup;
 			children = (
 				CE94958A26AEE31600F56408 /* RxSwiftCameraFilter */,
 				CE94958926AEE31600F56408 /* Products */,
+				5945DFD885733B63863AC86E /* Pods */,
+				3E9652343A7EEE75175CE42C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +86,8 @@
 			children = (
 				CE94958B26AEE31600F56408 /* AppDelegate.swift */,
 				CE94958D26AEE31600F56408 /* SceneDelegate.swift */,
+				CE9495A026AEE48F00F56408 /* PhotoCollectionViewController.swift */,
+				CE020F1826B43E3D0000E424 /* PhotoCollectionViewCell.swift */,
 				CE94958F26AEE31600F56408 /* ViewController.swift */,
 				CE94959126AEE31600F56408 /* Main.storyboard */,
 				CE94959426AEE32100F56408 /* Assets.xcassets */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE94959C26AEE32100F56408 /* Build configuration list for PBXNativeTarget "RxSwiftCameraFilter" */;
 			buildPhases = (
+				61FCE01229E0A414C65A91CD /* [CP] Check Pods Manifest.lock */,
 				CE94958426AEE31600F56408 /* Sources */,
 				CE94958526AEE31600F56408 /* Frameworks */,
 				CE94958626AEE31600F56408 /* Resources */,
+				134C28273E08E4DF3374AB98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +164,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		134C28273E08E4DF3374AB98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftCameraFilter/Pods-RxSwiftCameraFilter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftCameraFilter/Pods-RxSwiftCameraFilter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftCameraFilter/Pods-RxSwiftCameraFilter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61FCE01229E0A414C65A91CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftCameraFilter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE94958426AEE31600F56408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE94959026AEE31600F56408 /* ViewController.swift in Sources */,
+				CE020F1926B43E3D0000E424 /* PhotoCollectionViewCell.swift in Sources */,
 				CE94958C26AEE31600F56408 /* AppDelegate.swift in Sources */,
 				CE94958E26AEE31600F56408 /* SceneDelegate.swift in Sources */,
+				CE9495A126AEE48F00F56408 /* PhotoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +359,7 @@
 		};
 		CE94959D26AEE32100F56408 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0424069BC136052E6AE8E75F /* Pods-RxSwiftCameraFilter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		CE94959E26AEE32100F56408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720A20E85CDF63E2E4029024 /* Pods-RxSwiftCameraFilter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
