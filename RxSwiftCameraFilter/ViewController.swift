@@ -9,12 +9,13 @@ import UIKit
 import RxSwift
 
 class ViewController: UIViewController {
-    
+    // MARK: - Properties
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var applyFilterButton: UIButton!
     
     let disposeBag = DisposeBag()
-
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,14 +30,30 @@ class ViewController: UIViewController {
         // ➡️ 訂閱(subscribe) Observable 得到圖片
         photos.selectedPhoto.subscribe(onNext: { [weak self] photo in
             DispatchQueue.main.async {
-                self?.photoImageView.image = photo
-                self?.applyFilterButton.isHidden = false
+                self?.updateUI(with: photo)
             }
         }).disposed(by: disposeBag)
     }
     
-    private func updateUI(with image: UIImage) {
+    // MARK: - Selector
+    @IBAction func applyFilterButtonPressed() {
+        guard let sourceImage = photoImageView.image else {
+            return
+        }
         
+        FilterService()
+            .applyFilter(to: sourceImage)
+            .subscribe(onNext: { filteredImage in
+                DispatchQueue.main.async {
+                    self.photoImageView.image = filteredImage
+                }
+            }).disposed(by: disposeBag)
+    }
+    
+    // MARK: - Helper
+    private func updateUI(with image: UIImage) {
+        photoImageView.image = image
+        applyFilterButton.isHidden = false
     }
 }
 
