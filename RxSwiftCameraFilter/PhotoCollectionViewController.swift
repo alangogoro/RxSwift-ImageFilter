@@ -14,7 +14,7 @@ class PhotoCollectionViewController: UICollectionViewController {
     // MARK: - Properties
     private var images = [PHAsset]()
     private let selectedPhotoSubject = PublishSubject<UIImage>()
-    var selectePhoto: Observable<UIImage> {
+    var selectedPhoto: Observable<UIImage> {
         return selectedPhotoSubject.asObserver()
     }
     
