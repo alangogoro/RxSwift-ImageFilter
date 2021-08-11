@@ -41,7 +41,8 @@ class FilterService {
                                                         from: filter.outputImage!.extent) {
                 
                 let processedImage = UIImage(cgImage: cgImage,
-                                             scale: inputImage.scale, orientation: inputImage.imageOrientation)
+                                             scale: inputImage.scale,
+                                             orientation: inputImage.imageOrientation)
                 completion(processedImage)
             }
         }

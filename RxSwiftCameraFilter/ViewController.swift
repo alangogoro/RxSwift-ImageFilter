@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
@@ -27,7 +26,7 @@ class ViewController: UIViewController {
         guard let nav = segue.destination as? UINavigationController,
               let photos = nav.viewControllers.first as? PhotoCollectionViewController else { fatalError() }
         
-        // ➡️ 訂閱(subscribe) Observable 得到圖片
+        // ➡️ 訂閱(subscribe) Observable 捕捉圖片更新畫面
         photos.selectedPhoto.subscribe(onNext: { [weak self] photo in
             DispatchQueue.main.async {
                 self?.updateUI(with: photo)
@@ -56,4 +55,3 @@ class ViewController: UIViewController {
         applyFilterButton.isHidden = false
     }
 }
-
