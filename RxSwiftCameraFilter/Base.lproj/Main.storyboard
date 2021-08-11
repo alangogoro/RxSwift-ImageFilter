@@ -21,12 +21,15 @@
                                 <rect key="frame" x="0.0" y="89" width="414" height="671"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HB-4o-pae">
-                                <rect key="frame" x="160" y="790" width="94" height="33"/>
+                                <rect key="frame" x="160" y="760" width="94" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Apply Filter">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="applyFilterButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="6WW-5U-iDa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,7 +40,7 @@
                             <constraint firstItem="nHd-SI-akK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="muT-UN-Hyu"/>
                             <constraint firstItem="nHd-SI-akK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="nhf-P0-ujt"/>
                             <constraint firstItem="nHd-SI-akK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pwA-Xx-W5F"/>
-                            <constraint firstItem="9HB-4o-pae" firstAttribute="top" secondItem="nHd-SI-akK" secondAttribute="bottom" constant="30" id="riC-i8-9Ie"/>
+                            <constraint firstItem="9HB-4o-pae" firstAttribute="top" secondItem="nHd-SI-akK" secondAttribute="bottom" id="riC-i8-9Ie"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="相片濾鏡" id="GEt-ZG-OyN">
@@ -47,6 +50,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="applyFilterButton" destination="9HB-4o-pae" id="mJ1-9h-wtM"/>
+                        <outlet property="photoImageView" destination="nHd-SI-akK" id="B0K-9F-Rfp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

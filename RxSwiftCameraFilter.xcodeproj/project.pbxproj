@@ -16,6 +16,7 @@
 		CE94959526AEE32100F56408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94959426AEE32100F56408 /* Assets.xcassets */; };
 		CE94959826AEE32100F56408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE94959626AEE32100F56408 /* LaunchScreen.storyboard */; };
 		CE9495A126AEE48F00F56408 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9495A026AEE48F00F56408 /* PhotoCollectionViewController.swift */; };
+		CEF5C80326B9785000692236 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5C80226B9785000692236 /* FilterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE94959726AEE32100F56408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE94959926AEE32100F56408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9495A026AEE48F00F56408 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		CEF5C80226B9785000692236 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				CE9495A026AEE48F00F56408 /* PhotoCollectionViewController.swift */,
 				CE020F1826B43E3D0000E424 /* PhotoCollectionViewCell.swift */,
 				CE94958F26AEE31600F56408 /* ViewController.swift */,
+				CEF5C80226B9785000692236 /* FilterService.swift */,
 				CE94959126AEE31600F56408 /* Main.storyboard */,
 				CE94959426AEE32100F56408 /* Assets.xcassets */,
 				CE94959626AEE32100F56408 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 				CE94959026AEE31600F56408 /* ViewController.swift in Sources */,
 				CE020F1926B43E3D0000E424 /* PhotoCollectionViewCell.swift in Sources */,
 				CE94958C26AEE31600F56408 /* AppDelegate.swift in Sources */,
+				CEF5C80326B9785000692236 /* FilterService.swift in Sources */,
 				CE94958E26AEE31600F56408 /* SceneDelegate.swift in Sources */,
 				CE9495A126AEE48F00F56408 /* PhotoCollectionViewController.swift in Sources */,
 			);
